@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DBClusterConfiguration xmlns="http://edu.yale.cs.db.hadoop/DBConfigurationSchema">
+    <Nodes Location="localhost" Driver="com.mysql.jdbc.Driver" Username="root" Password="1212">
+        <Relations id="books">
+            <Partitions id="0" url="jdbc:mysql://localhost:3306/udb0"/>
+        </Relations>
+        <Relations id="grep">
+            <Partitions id="0" url="jdbc:mysql://localhost:3306/udb0"/>
+        </Relations>
+        <Relations id="EntireRankings">
+            <Partitions id="0" url="jdbc:mysql://localhost:3306/udb0"/>
+        </Relations>
+        <Relations id="Rankings">
+            <Partitions id="0" url="jdbc:mysql://localhost:3306/cdb0"/>
+            <Partitions id="1" url="jdbc:mysql://localhost:3306/cdb1"/>
+            <Partitions id="2" url="jdbc:mysql://localhost:3306/cdb2"/>
+            <Partitions id="3" url="jdbc:mysql://localhost:3306/cdb3"/>
+            <Partitions id="4" url="jdbc:mysql://localhost:3306/cdb4"/>
+            <Partitions id="5" url="jdbc:mysql://localhost:3306/cdb5"/>
+            <Partitions id="6" url="jdbc:mysql://localhost:3306/cdb6"/>
+            <Partitions id="7" url="jdbc:mysql://localhost:3306/cdb7"/>
+            <Partitions id="8" url="jdbc:mysql://localhost:3306/cdb8"/>
+            <Partitions id="9" url="jdbc:mysql://localhost:3306/cdb9"/>
+            <Partitions id="10" url="jdbc:mysql://localhost:3306/cdb10"/>
+            <Partitions id="11" url="jdbc:mysql://localhost:3306/cdb11"/>
+            <Partitions id="12" url="jdbc:mysql://localhost:3306/cdb12"/>
+            <Partitions id="13" url="jdbc:mysql://localhost:3306/cdb13"/>
+            <Partitions id="14" url="jdbc:mysql://localhost:3306/cdb14"/>
+            <Partitions id="15" url="jdbc:mysql://localhost:3306/cdb15"/>
+            <Partitions id="16" url="jdbc:mysql://localhost:3306/cdb16"/>
+            <Partitions id="17" url="jdbc:mysql://localhost:3306/cdb17"/>
+            <Partitions id="18" url="jdbc:mysql://localhost:3306/cdb18"/>
+            <Partitions id="19" url="jdbc:mysql://localhost:3306/cdb19"/>
+        </Relations>
+        <Relations id="UserVisits">
+            <Partitions id="0" url="jdbc:mysql://localhost:3306/cdb0"/>
+            <Partitions id="1" url="jdbc:mysql://localhost:3306/cdb1"/>
+            <Partitions id="2" url="jdbc:mysql://localhost:3306/cdb2"/>
+            <Partitions id="3" url="jdbc:mysql://localhost:3306/cdb3"/>
+            <Partitions id="4" url="jdbc:mysql://localhost:3306/cdb4"/>
+            <Partitions id="5" url="jdbc:mysql://localhost:3306/cdb5"/>
+            <Partitions id="6" url="jdbc:mysql://localhost:3306/cdb6"/>
+            <Partitions id="7" url="jdbc:mysql://localhost:3306/cdb7"/>
+            <Partitions id="8" url="jdbc:mysql://localhost:3306/cdb8"/>
+            <Partitions id="9" url="jdbc:mysql://localhost:3306/cdb9"/>
+            <Partitions id="10" url="jdbc:mysql://localhost:3306/cdb10"/>
+            <Partitions id="11" url="jdbc:mysql://localhost:3306/cdb11"/>
+            <Partitions id="12" url="jdbc:mysql://localhost:3306/cdb12"/>
+            <Partitions id="13" url="jdbc:mysql://localhost:3306/cdb13"/>
+            <Partitions id="14" url="jdbc:mysql://localhost:3306/cdb14"/>
+            <Partitions id="15" url="jdbc:mysql://localhost:3306/cdb15"/>
+            <Partitions id="16" url="jdbc:mysql://localhost:3306/cdb16"/>
+            <Partitions id="17" url="jdbc:mysql://localhost:3306/cdb17"/>
+            <Partitions id="18" url="jdbc:mysql://localhost:3306/cdb18"/>
+            <Partitions id="19" url="jdbc:mysql://localhost:3306/cdb19"/>
+        </Relations>
+    </Nodes>
+</DBClusterConfiguration>

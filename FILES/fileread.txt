@@ -1,0 +1,24 @@
+public static StringBuffer getData(String fnam)
+{
+    File f=new File(fnam);
+    StringBuffer bf=new StringBuffer();
+    if(!f.exists()){
+        return bf;
+    }
+    try{
+    
+        FileInputStream fin=new FileInputStream(f);
+        BufferedReader br=new BufferedReader(new InputStreamReader(fin));
+        String lin="";
+        while((lin=br.readLine())!=null)
+        {
+            bf.append("\n"+lin);
+        }
+        br.close();
+        fin.close();
+        try{
+        bf=new StringBuffer(bf.substring(1));
+        }catch(Exception ex){}
+    }catch(Exception ex){ex.printStackTrace();}
+    return bf;
+}

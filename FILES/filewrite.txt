@@ -1,0 +1,91 @@
+  public void changetocsv(String path) {
+
+        try {
+            frmTreditional td = new frmTreditional();
+
+            BufferedReader bf = new BufferedReader(new FileReader(new File(path)));
+            StringBuffer sb = new StringBuffer();
+            StringBuffer saw = new StringBuffer();
+            String s = null;
+            int max = td.getax(path);
+            System.out.println("Length=" + max);
+            
+            
+                for (int i = 1; i <= max + 1; i++) {
+
+                    sb.append("A" + i + ",");
+
+                }
+                sb.deleteCharAt(sb.toString().lastIndexOf(","));
+                sb.append("\n");
+            while ((s = bf.readLine()) != null) {
+
+                String s1[] = s.split(",");
+
+                String s2 = s1[0];
+                String s3 = s1[1];
+                String as[] = null;
+
+                StringTokenizer st = new StringTokenizer(s2);
+                int a1 = 0;
+
+                while (st.hasMoreElements()) {
+
+                    sb.append(st.nextElement().toString() + ",");
+
+                    a1++;
+                    //    System.out.println(p.length());
+                }
+
+                if (a1 < max) {
+                    for (int aaa = 0; aaa < max - a1; aaa++) {
+                        sb.append("null" + ",");
+                    }
+                }
+                if (s3.equals("0")) {
+
+                    sb.append("n");
+                }
+
+                if (s3.equals("1")) {
+
+                    sb.append("p");
+                }
+                //  sb.deleteCharAt(sb.lastIndexOf(","));
+                sb.append("\n");
+//              saw.append(sb.substring(0, sb.lastIndexOf(",") )+"\n");
+
+            }
+
+            System.out.println(sb);
+         //////////
+
+            File file = new File("newfile.csv");
+
+            String content = sb.toString();
+
+     
+            FileOutputStream fop = new FileOutputStream(file);
+
+            // if file doesn't exists, then create it
+            if (!file.exists()) {
+                file.createNewFile();
+            }
+
+			// get the content in bytes
+
+            byte[] contentInBytes = content.getBytes();
+
+            
+            fop.write(contentInBytes);
+           
+            fop.flush();
+            fop.close();
+
+            System.out.println("Done");
+
+        } catch (Exception e) {
+            e.printStackTrace();
+
+            //////
+        }

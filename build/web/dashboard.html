@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Data security</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Believe Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!-- bootstarp-css -->
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<!--// bootstarp-css -->
+<!-- css -->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+<!--// css -->
+<!--fonts-->
+<link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
+<!--/fonts-->
+<!--js-->
+<script src="js/jquery.min.js"></script>
+<!--/js-->
+</head>
+<body>
+<div id="home" class="header">
+	<div class="container">
+		<div class="header-info">
+			<div class="header-info-left">
+				<div class="logo">
+					
+				</div>
+			</div>
+						<div class="header-info-right">
+							<div class="header cbp-spmenu-push">
+								<nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id="cbp-spmenu-s2">
+									<h3>MENU</h3>
+									<a class="scroll" href="#home">Home</a>
+                                                                        <a class="scroll" href="#portfolio">Menu</a> 
+                                                                        <a href="register.jsp">SignUp</a>
+                                                                        <a href="Utility.jsp">Utility</a>
+                                                                        <a class="scroll" href="#about">Performance</a>
+								
+								                                                                       
+								</nav>
+																<!--script-nav -->	
+			<script>
+					$("span.menu").click(function(){
+						$("ul.navigatoin").slideToggle("300" , function(){
+						});
+					});
+					</script>
+
+					<script type="text/javascript">
+							jQuery(document).ready(function($) {
+								$(".scroll").click(function(event){		
+									event.preventDefault();
+									$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+								});
+							});
+							</script>
+						<div class="clearfix"> </div>
+					<!-- /script-nav -->
+
+									<div class="main">
+										<section class="buttonset">
+											<button id="showRightPush">MENU</button>
+										</section>
+									</div>
+									
+									<script src="js/classie.js"></script>
+									<script>
+										var	menuRight = document.getElementById( 'cbp-spmenu-s2' ),
+											showRightPush = document.getElementById( 'showRightPush' ),
+											body = document.body;
+							
+										showRightPush.onclick = function() {
+											classie.toggle( this, 'active' );
+											classie.toggle( body, 'cbp-spmenu-push-toleft' );
+											classie.toggle( menuRight, 'cbp-spmenu-open' );
+											disableOther( 'showRightPush' );
+										};
+							
+									</script>
+			
+							</div>
+	
+						</div>
+									<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<!--header-banner-->
+<div class="header-banner">
+	<div class="container">
+		<div class="header-banner-info">
+                    
+                    <h1>Please Login Here</h1><br>
+                    <form action="Loginprocess.jsp" method="post">
+                <table height="150px" width="300px" align="center">
+                <tr>
+                    <th>UserId</th>
+                    <td><input type="text" name="UserId"></td>
+                    </tr>
+                    <tr>
+                    <th>Password</th>
+                   <td><input type="Password" name="Pass"></td>
+                   </tr>
+                   <tr><td><input type="submit" name="submit" value="Login"></td></tr>
+                  
+            </table>
+                    </form> 
+                       
+		</div>
+             
+               
+	</div>
+</div>
+
+<script src="js/jquery.min.js"> </script>
+<script src="js/responsiveslides.min.js"></script>
+ <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+      $("#slider2").responsiveSlides({
+        auto: false,
+        pager: true,
+        speed: 300,
+        namespace: "callbacks",
+      });
+    });
+  </script>
+ 
+
+<div class="footer">
+	<div class="container">
+		<div class="footer-info">
+			
+		</div>
+		<div class="copy-rights">
+                    <p><a></a></p>
+		</div>
+		<div class="clearfix"> </div>
+	</div>
+</div>-->
+
+	</body>
+</html>
